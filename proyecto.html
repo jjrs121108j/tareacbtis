@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto_tino.css"/>
+    <title>CBTIS 205</title>
+</head>
+<body>
+    <div id="titulo">
+       <h1>EDUCACION EN JUCHITAN <button onclick="mostrar()">MENU</button></h1>
+    </div>
+    <div id="menu">
+<a href="./ACERCA.html"><button id="acerca">acerca</button></a>
+    </div>
+    
+
+   <br>
+
+   <h1 class="c">CBTIS 205</h1>
+   <button onclick="moverPantalla()">CONTINUAR</button>
+
+    <div id="inf">
+        <section>
+            <a href="./dgti.html"><img src="logo.jpg" id="a"/></a>
+            <a href="./charis.html"><img src="charis.jpg" id="a"/></a>
+            <a href="./sp.html"><img src="sp.jpg" id="a"/></a>
+            <a href="./juchitan.html"><img src="juchitan.jpg" id="a"/></a>
+        </section>
+    </div>
+<script>
+     function moverPantalla() {
+      document.getElementById('inf').scrollIntoView({ behavior: 'smooth' });
+    }
+    function mostrar() {
+        const menu = document.getElementById("menu");
+        if(menu.style.display === "block")
+        {menu.style.display="none";}
+        else {menu.style.display="block";}
+    }
+</script>
+</body>
+</html>

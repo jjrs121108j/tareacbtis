@@ -1,0 +1,79 @@
+body {
+    background-image: url(dgti.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#titulo {
+    border:solid #800000;
+    background-color:#800000;
+    color: black;
+}
+section {
+    display: flex;
+    width: 1000px;
+    height: 350px;
+}
+section a {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    overflow:0;
+    transition: .5s ease;
+}
+section a:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+#inf{
+    margin-left:300px;
+    margin-right:200px;
+    margin-top: 520px;
+    margin-bottom: 250px;
+    box-align: center;
+    border: solid;
+    border-color: brown;
+    width: 1000px;
+    height: 350px;
+}
+h1 {
+    color: white;
+}
+.c{
+    text-align: center;
+    margin-top: 300px;
+}
+button {
+ margin-left: 695px;
+ font-size: 20px;
+ background-color: yellow;
+ color: black;
+}
+#a{
+    width:100%;
+    height: 100%;
+    flex-grow: 1;
+}
+#b {
+    margin-left: 600px;
+}
+p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+#menu {
+    display: none;
+    margin-left: 1100px;
+    margin-top: 0;
+    background-color: #800000;
+    border: solid;
+    background-color: #800000;
+}
+#acerca{
+    background-color: yellow;
+    font-size: 20px;
+    margin-left: 5px;
+    color: black;
+}
